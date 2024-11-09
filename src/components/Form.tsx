@@ -61,6 +61,7 @@ const Form: React.FC<ProsForm> = ({
     const getMaterialesSubmit = async () => {
       const res = await getMaterial(changeEs);
       if (res && res.status === 200) {
+        setDiametros([])
         setMateriales(
           res.data.map((e: any) => {
             return {
