@@ -2,9 +2,9 @@ import axios from "axios";
 
 const url = "https://helicoiedu.onrender.com/";
 
-export const getMaterial = async () => {
+export const getMaterial = async (changeEs:boolean) => {
   try {
-    return await axios.get(url + "materiales" );
+    return await axios.get(url + `materiales?sistema=${!changeEs}`);
   } catch (error) {
     return error;
   }

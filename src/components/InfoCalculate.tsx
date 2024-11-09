@@ -2,7 +2,7 @@
 import React from "react";
 import compresion from "../assets/comprension2.jpeg";
 import extension from "../assets/extension2.jpeg";
-import torsion from "../assets/torsion.jpg";
+import torsion from "../assets/Torsion2.jpg";
 import viewIcon from "../assets/ViewIcon.svg";
 import Modal from "./Modal";
 import InfoModal from "./InfoModal";
@@ -25,6 +25,7 @@ import {
   extensioncase4Body,
   extensioncase4type,
   extensioncase5type,
+  torsion1TypeBody,
   torsion2Body,
   torsion2TypeBody,
   torsion3Body,
@@ -97,7 +98,7 @@ const InfoCalculate: React.FC<{
       if (casesChoose === "5") return extensioncase5type;
       return extAndCompTypeBody;
     }
-
+    if (casesChoose === "1") return torsion1TypeBody;
     if (casesChoose === "2") return torsion2TypeBody;
     if (casesChoose === "3") return torsion3TypeBody;
     if (casesChoose === "4") return torsion4TypeBody;

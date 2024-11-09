@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import compresion from "../assets/comprension.jpeg";
 import extension from "../assets/extension.jpeg";
-import torsion from "../assets/torsion.jpg";
+import torsion from "../assets/Torsion.jpg";
 import Tooltip from "./tooltip";
 import { calculate, getDiametro, getMaterial } from "./helpers/fetch";
 import { cases } from "./helpers/resultInfo";
@@ -59,7 +59,7 @@ const Form: React.FC<ProsForm> = ({
 
   useEffect(() => {
     const getMaterialesSubmit = async () => {
-      const res = await getMaterial();
+      const res = await getMaterial(changeEs);
       if (res && res.status === 200) {
         setMateriales(
           res.data.map((e: any) => {
@@ -72,7 +72,7 @@ const Form: React.FC<ProsForm> = ({
       }
     };
     getMaterialesSubmit();
-  }, []);
+  }, [changeEs]);
 
   useEffect(() => {
     if (idMaterial) {
@@ -91,7 +91,7 @@ const Form: React.FC<ProsForm> = ({
       };
       getDiametrosSubmit();
     }
-  }, [idMaterial]);
+  }, [idMaterial,changeEs]);
 
   const validateInputs = () => {
     const newErrors: { [key: string]: string } = {};

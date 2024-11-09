@@ -152,6 +152,7 @@ export const extensioncase4Body = [
 ];
 
 export const extAndCompTypeBody = ["in", "in", "in", "in", "lb/in"];
+export const torsion1TypeBody = ["in", "in", "in", "lb/in"];
 export const torsion2TypeBody = ["in", "in", "in", "°"];
 export const torsion3TypeBody = ["in", "in", "in", "lb*in", "lb*in"];
 export const torsion4TypeBody = ["in", "in", "in", "°" ];
