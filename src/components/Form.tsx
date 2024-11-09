@@ -365,7 +365,7 @@ const Form: React.FC<ProsForm> = ({
     }
   }, [bodyChoose]);
 
-  return (
+   return (
     <div className="grid gap-4 grid-cols-2">
       <div>
         <label
@@ -763,12 +763,14 @@ const Form: React.FC<ProsForm> = ({
       ) : null}
 
       <div>
-        <label
-          htmlFor="material"
-          className="block mb-2 text-sm font-medium text-gray-900 "
-        >
-          Material
-        </label>
+        <Tooltip text="Contiene una lista de 5 aceros con amplia usabilidad disponibles para el diseño del resorte.">
+          <label
+            htmlFor="material"
+            className="block text-sm font-medium text-gray-900 "
+          >
+            Material
+          </label>
+        </Tooltip>
         <select
           id="material"
           name="material"
@@ -824,12 +826,14 @@ const Form: React.FC<ProsForm> = ({
 
       {bodyChoose === "Compresión" ? (
         <div>
-          <label
-            htmlFor="Extremos"
-            className="block mb-2 text-sm font-medium text-gray-900 "
-          >
-            Extremos
-          </label>
+          <Tooltip text="Contiene una lista de detalles de extremos disponibles para el diseño del resorte de compresión.">
+            <label
+              htmlFor="Extremos"
+              className="block text-sm font-medium text-gray-900 "
+            >
+              Extremos
+            </label>
+          </Tooltip>
           <select
             id="Extremos"
             name="Extremos"
@@ -856,7 +860,7 @@ const Form: React.FC<ProsForm> = ({
             <Tooltip text="Es la relación entre el diámetro medio de la espira (D) y el diámetro del alambre (d). ">
               <label
                 htmlFor="C"
-                className="block mb-2 text-sm font-medium text-gray-900 "
+                className="block text-sm font-medium text-gray-900 "
               >
                 Indice C
               </label>
@@ -878,12 +882,14 @@ const Form: React.FC<ProsForm> = ({
             )}
           </div>
           <div>
-            <label
-              htmlFor="Tratamiento"
-              className="block mb-2 text-sm font-medium text-gray-900 "
-            >
-              Tratamiento
-            </label>
+            <Tooltip text="Contiene una lista de detalles de extremos disponibles para el diseño del resorte de compresión.">
+              <label
+                htmlFor="Tratamiento"
+                className="block text-sm font-medium text-gray-900 "
+              >
+                Tratamiento
+              </label>
+            </Tooltip>
             <select
               id="Tratamiento"
               name="Tratamiento"
@@ -959,12 +965,15 @@ const Form: React.FC<ProsForm> = ({
       ) : null}
 
       <div>
-        <label
-          htmlFor="Fatiga"
-          className="block mb-2 text-sm font-medium text-gray-900 "
-        >
-          Fatiga
-        </label>
+        <Tooltip text="Al seleccionar esta opción usted considerará que el resorte se someterá a cargas cíclicas.">
+          <label
+            htmlFor="Fatiga"
+            className="block text-sm font-medium text-gray-900 "
+          >
+            Fatiga
+          </label>
+        </Tooltip>
+
         <select
           id="Fatiga"
           name="Fatiga"
@@ -984,12 +993,15 @@ const Form: React.FC<ProsForm> = ({
       </div>
       {bodyChoose !== "Extensión" ? (
         <div>
+          <Tooltip text=" El asentamiento permite agregar esfuerzos residuales al resorte a partir de la cedencia del material con el que se fabrica. ">
           <label
             htmlFor="Asentamiento"
-            className="block mb-2 text-sm font-medium text-gray-900 "
+            className="block text-sm font-medium text-gray-900 "
           >
             Asentamiento
           </label>
+          </Tooltip>
+         
           <select
             id="Asentamiento"
             name="Asentamiento"
@@ -1014,7 +1026,7 @@ const Form: React.FC<ProsForm> = ({
             <Tooltip text="Es la variación del ángulo de rotación del resorte medida desde su posición libre hasta una posición final.">
               <label
                 htmlFor="L1"
-                className="block mb-2 text-sm font-medium text-gray-900 "
+                className="block  text-sm font-medium text-gray-900 "
               >
                 Theta
               </label>
