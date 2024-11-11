@@ -827,7 +827,7 @@ const Form: React.FC<ProsForm> = ({
 
       {bodyChoose === "Compresión" ? (
         <div>
-          <Tooltip text="Contiene una lista de detalles de extremos disponibles para el diseño del resorte de compresión.">
+          <Tooltip text="Contiene una lista de detalles de extremos disponibles para el diseño de resortes helicoidales.">
             <label
               htmlFor="Extremos"
               className="block text-sm font-medium text-gray-900 "
@@ -883,7 +883,7 @@ const Form: React.FC<ProsForm> = ({
             )}
           </div>
           <div>
-            <Tooltip text="Contiene una lista de detalles de extremos disponibles para el diseño del resorte de compresión.">
+            <Tooltip text="Permite agegar esfuerzos resiudales benéficos en el resorte a partir de dos alternativas, Sin granallar y Granallado con Partículas.">
               <label
                 htmlFor="Tratamiento"
                 className="block text-sm font-medium text-gray-900 "
