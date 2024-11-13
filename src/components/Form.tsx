@@ -794,7 +794,7 @@ const Form: React.FC<ProsForm> = ({
         )}
       </div>
       <div>
-        <Tooltip text="Es el diámetro medio del resorte.">
+        <Tooltip text="Es el espesor del material utilizado para la fabricación del resorte.">
           <label
             htmlFor="d"
             className="block  text-sm font-medium text-gray-900 "
