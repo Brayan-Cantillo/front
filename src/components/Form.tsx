@@ -92,7 +92,7 @@ const Form: React.FC<ProsForm> = ({
       };
       getDiametrosSubmit();
     }
-  }, [idMaterial,changeEs]);
+  }, [idMaterial]);
 
   const validateInputs = () => {
     const newErrors: { [key: string]: string } = {};
