@@ -271,7 +271,7 @@ const Form: React.FC<ProsForm> = ({
     const fmin = parseFloat(values["Fmin"]);
     const fmax = parseFloat(values["Fmax"]);
     if (!values["Fmin"] || fmin > fmax) {
-      newErrors["Fmin"] = "es requerido y debe ser menor a fmax.";
+      newErrors["Fmin"] = "Fmin es requerido y debe ser menor a fmax.";
     }
     if (!values["Fmax"] || fmax < fmin) {
       newErrors["Fmax"] = "Fmax es requerido y debe ser mayor que Fmin.";
@@ -402,7 +402,7 @@ const Form: React.FC<ProsForm> = ({
           <div>
             <Tooltip
               text={
-                "Es la variación del ángulo de rotación del resorte medida desde su posición libre."
+                "Es la variación del ángulo de rotación del resorte medido desde su posición libre."
               }
             >
               <label
@@ -433,7 +433,7 @@ const Form: React.FC<ProsForm> = ({
           <div>
             <Tooltip
               text={
-                "Es la variación del ángulo de rotación del resorte medida desde su posición final.  "
+                "Es la variación del ángulo de rotación del resorte medido desde su posición final.  "
               }
             >
               <label
@@ -883,7 +883,7 @@ const Form: React.FC<ProsForm> = ({
             )}
           </div>
           <div>
-            <Tooltip text="Permite agegar esfuerzos resiudales benéficos en el resorte a partir de dos alternativas, Sin granallar y Granallado con Partículas.">
+            <Tooltip text="Permite agregar esfuerzos resiudales benéficos en el resorte a partir de dos alternativas, Sin granallar y Granallado con Partículas.">
               <label
                 htmlFor="Tratamiento"
                 className="block text-sm font-medium text-gray-900 "
@@ -1024,7 +1024,7 @@ const Form: React.FC<ProsForm> = ({
       {bodyChoose === "Torsión" ? (
         <>
           <div>
-            <Tooltip text="Es la variación del ángulo de rotación del resorte medida desde su posición libre hasta una posición final.">
+            <Tooltip text="Es la variación del ángulo de rotación del resorte medido desde su posición libre hasta una posición final.">
               <label
                 htmlFor="L1"
                 className="block  text-sm font-medium text-gray-900 "

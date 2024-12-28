@@ -3,14 +3,14 @@ export const torsionBody = [
   { value: "Do", label: "Do" },
   { value: "Di", label: "Di" },
   { value: "k", label: "Constante del resorte" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
 export const torsion2Body = [
   { value: "D", label: "D" },
   { value: "Di", label: "Di" },
   { value: "theta", label: "theta" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
 export const torsion3Body = [
@@ -19,7 +19,7 @@ export const torsion3Body = [
   { value: "Di", label: "Di" },
   { value: "Mmin", label: "Mmin" },
   { value: "Mmax", label: "Mmax" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
 export const torsion4Body = [
@@ -27,7 +27,7 @@ export const torsion4Body = [
   { value: "Do", label: "Do" },
   { value: "Di", label: "Di" },
   { value: "theta", label: "theta" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
 export const torsion5Body = [
@@ -36,7 +36,7 @@ export const torsion5Body = [
   { value: "Di", label: "Di" },
   { value: "Mmin", label: "Mmin" },
   { value: "Mmax", label: "Mmax" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
 
@@ -46,7 +46,7 @@ export const compresionCase1Body = [
   { value: "Di", label: "Di" },
   { value: "Lf", label: "Lf" },
   { value: "k", label: "Constante del resorte" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Ns cierre", label: "F.D.S Cierre" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
@@ -55,8 +55,8 @@ export const compresionCase2Body = [
   { value: "Do", label: "Do" },
   { value: "Di", label: "Di" },
   { value: "Lf", label: "Lf" },
-  { value: "y", label: "Deflexion" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "y", label: "Deflexión" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Ns cierre", label: "F.D.S Cierre" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
@@ -67,7 +67,7 @@ export const compresionCase3Body = [
   { value: "Lf", label: "Lf" },
   { value: "Fmax", label: "Fmax" },
   { value: "Fmin", label: "Fmin" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Ns cierre", label: "F.D.S Cierre" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
@@ -76,8 +76,8 @@ export const compresionCase4Body = [
   { value: "Do", label: "Do" },
   { value: "Di", label: "Di" },
   { value: "Lf", label: "Lf" },
-  { value: "y", label: "Deflexion" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "y", label: "Deflexión" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Ns cierre", label: "F.D.S Cierre" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
@@ -88,7 +88,7 @@ export const compresionCase5Body = [
   { value: "Lf", label: "Lf" },
   { value: "Fmax", label: "Fmax" },
   { value: "Fmin", label: "Fmin" },
-  { value: "Ns", label: "F.D.S Estatico" },
+  { value: "Ns", label: "F.D.S Estático" },
   { value: "Ns cierre", label: "F.D.S Cierre" },
   { value: "Nf", label: "F.D.S Fatiga" },
 ];
@@ -99,12 +99,12 @@ export const extensionBody = [
   { value: "Di", label: "Di" },
   { value: "Lf", label: "Lf" },
   { value: "k", label: "Constante del resorte" },
-  { value: "Ns", label: "F.D.S Estatico en espiras" },
-  { value: "NA", label: "F.D.S Estatico en ganchos por flexion" },
-  { value: "NB", label: "F.D.S Estatico en ganchos por torsion" },
+  { value: "Ns", label: "F.D.S Estático en espiras" },
+  { value: "NA", label: "F.D.S Estático en ganchos por flexión" },
+  { value: "NB", label: "F.D.S Estático en ganchos por torsión" },
   { value: "Nf", label: "F.D.S Fatiga en espiras" },
-  { value: "NfgF", label: "F.D.S Fatiga en ganchos por flexion" },
-  { value: "NfgT", label: "F.D.S Fatiga en ganchos por torsion" },
+  { value: "NfgF", label: "F.D.S Fatiga en ganchos por flexión" },
+  { value: "NfgT", label: "F.D.S Fatiga en ganchos por torsión" },
 ];
 
 export const extensioncase2Body = [
@@ -113,12 +113,12 @@ export const extensioncase2Body = [
   { value: "Di", label: "Di" },
   { value: "Lf", label: "Lf" },
   { value: "y", label: "Deflexion" },
-  { value: "Ns", label: "F.D.S Estatico en espiras" },
-  { value: "NA", label: "F.D.S Estatico en ganchos por flexion" },
-  { value: "NB", label: "F.D.S Estatico en ganchos por torsion" },
+  { value: "Ns", label: "F.D.S Estático en espiras" },
+  { value: "NA", label: "F.D.S Estático en ganchos por flexión" },
+  { value: "NB", label: "F.D.S Estático en ganchos por torsión" },
   { value: "Nf", label: "F.D.S Fatiga en espiras" },
-  { value: "NfgF", label: "F.D.S Fatiga en ganchos por flexion" },
-  { value: "NfgT", label: "F.D.S Fatiga en ganchos por torsion" },
+  { value: "NfgF", label: "F.D.S Fatiga en ganchos por flexión" },
+  { value: "NfgT", label: "F.D.S Fatiga en ganchos por torsión" },
 ];
 
 export const extensioncase3Body = [
@@ -128,12 +128,12 @@ export const extensioncase3Body = [
   { value: "Lf", label: "Lf" },
   { value: "Fmax", label: "Fmax" },
   { value: "Fmin", label: "Fmin" },
-  { value: "Ns", label: "F.D.S Estatico en espiras" },
-  { value: "NA", label: "F.D.S Estatico en ganchos por flexion" },
-  { value: "NB", label: "F.D.S Estatico en ganchos por torsion" },
+  { value: "Ns", label: "F.D.S Estático en espiras" },
+  { value: "NA", label: "F.D.S Estático en ganchos por flexión" },
+  { value: "NB", label: "F.D.S Estático en ganchos por torsión" },
   { value: "Nf", label: "F.D.S Fatiga en espiras" },
-  { value: "NfgF", label: "F.D.S Fatiga en ganchos por flexion" },
-  { value: "NfgT", label: "F.D.S Fatiga en ganchos por torsion" },
+  { value: "NfgF", label: "F.D.S Fatiga en ganchos por flexión" },
+  { value: "NfgT", label: "F.D.S Fatiga en ganchos por torsión" },
 ];
 
 export const extensioncase4Body = [
@@ -143,12 +143,12 @@ export const extensioncase4Body = [
   { value: "Lf", label: "Lf" },
   { value: "Fmax", label: "Fmax" },
   { value: "Fmin", label: "Fmin" },
-  { value: "Ns", label: "F.D.S Estatico en espiras" },
-  { value: "NA", label: "F.D.S Estatico en ganchos por flexion" },
-  { value: "NB", label: "F.D.S Estatico en ganchos por torsion" },
+  { value: "Ns", label: "F.D.S Estático en espiras" },
+  { value: "NA", label: "F.D.S Estático en ganchos por flexión" },
+  { value: "NB", label: "F.D.S Estático en ganchos por torsión" },
   { value: "Nf", label: "F.D.S Fatiga en espiras" },
-  { value: "NfgF", label: "F.D.S Fatiga en ganchos por flexion" },
-  { value: "NfgT", label: "F.D.S Fatiga en ganchos por torsion" },
+  { value: "NfgF", label: "F.D.S Fatiga en ganchos por flexión" },
+  { value: "NfgT", label: "F.D.S Fatiga en ganchos por torsión" },
 ];
 
 export const extAndCompTypeBody = ["in", "in", "in", "in", "lb/in"];
