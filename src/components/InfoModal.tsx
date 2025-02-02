@@ -161,7 +161,7 @@ const InfoModal: React.FC<{ bodyChoose: string; values: any; changeEs:boolean}> 
         </div>
       </div>
       <div className="grid py-5 px-6 grid-cols-3  space-y-3 rounded-md shadow bg-slate-100">
-        <span className="col-span-3 text-center font-bold">F.MECANICOS</span>
+        <span className="col-span-3 text-center font-bold">F.MECÁNICOS</span>
         <div className="flex flex-col space-y-2">
           {switchMecanicos().map((e) => (
             <span key={e}>{e}</span>
