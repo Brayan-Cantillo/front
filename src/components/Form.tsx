@@ -246,46 +246,46 @@ const Form: React.FC<ProsForm> = ({
   };
 
   const ymin_ymax = (newErrors: any) => {
-    const ymin = parseFloat(values["ymin"]);
-    const ymax = parseFloat(values["ymax"]);
-    if (!values["ymin"] || ymin > ymax) {
-      newErrors["ymin"] = "ymin es requerido  y debe ser menor a ymax.";
+    const ymin = parseFloat(values["ymín"]);
+    const ymax = parseFloat(values["ymáx"]);
+    if (!values["ymín"] || ymin > ymax) {
+      newErrors["ymín"] = "ymín es requerido  y debe ser menor a ymáx.";
     }
-    if (!values["ymax"] || ymax < ymin) {
-      newErrors["ymax"] = "ymax es requerido y debe ser mayor que ymin.";
+    if (!values["ymáx"] || ymax < ymin) {
+      newErrors["ymáx"] = "ymáx es requerido y debe ser mayor que ymín.";
     }
   };
 
   const mmin_mmax = (newErrors: any) => {
-    const mmin = parseFloat(values["Mmin"]);
-    const mmax = parseFloat(values["Mmax"]);
-    if (!values["Mmin"] || mmin > mmax) {
-      newErrors["Mmin"] = "Mmin es requerido y debe ser menor a Mmax.";
+    const mmin = parseFloat(values["Mmín"]);
+    const mmax = parseFloat(values["Mmáx"]);
+    if (!values["Mmín"] || mmin > mmax) {
+      newErrors["Mmín"] = "Mmín es requerido y debe ser menor a Mmáx.";
     }
-    if (!values["Mmax"] || mmax < mmin) {
-      newErrors["Mmax"] = "Mmax es requerido y debe ser mayor que Mmin.";
+    if (!values["Mmáx"] || mmax < mmin) {
+      newErrors["Mmáx"] = "Mmáx es requerido y debe ser mayor que Mmín.";
     }
   };
 
   const fmin_fmax = (newErrors: any) => {
-    const fmin = parseFloat(values["Fmin"]);
-    const fmax = parseFloat(values["Fmax"]);
-    if (!values["Fmin"] || fmin > fmax) {
-      newErrors["Fmin"] = "Fmin es requerido y debe ser menor a fmax.";
+    const fmin = parseFloat(values["Fmín"]);
+    const fmax = parseFloat(values["Fmáx"]);
+    if (!values["Fmín"] || fmin > fmax) {
+      newErrors["Fmín"] = "Fmín es requerido y debe ser menor a fmáx.";
     }
-    if (!values["Fmax"] || fmax < fmin) {
-      newErrors["Fmax"] = "Fmax es requerido y debe ser mayor que Fmin.";
+    if (!values["Fmáx"] || fmax < fmin) {
+      newErrors["Fmáx"] = "Fmáx es requerido y debe ser mayor que Fmín.";
     }
   };
   const amin_amax = (newErrors: any) => {
-    const thetamin = parseFloat(values["thetamin"]);
-    const thetamax = parseFloat(values["thetamax"]);
-    if (!values["thetamin"] || thetamin > thetamax) {
-      newErrors["thetamin"] = "thetamin es requerido y debe ser mayor 0.";
+    const thetamin = parseFloat(values["thetamín"]);
+    const thetamax = parseFloat(values["thetamáx"]);
+    if (!values["thetamín"] || thetamin > thetamax) {
+      newErrors["thetamín"] = "thetamín es requerido y debe ser mayor 0.";
     }
-    if (!values["thetamax"] || thetamax < thetamin) {
-      newErrors["thetamax"] =
-        "thetamax es requerido y debe ser mayor que thetamin.";
+    if (!values["thetamáx"] || thetamax < thetamin) {
+      newErrors["thetamáx"] =
+        "thetamáx es requerido y debe ser mayor que thetamín.";
     }
   };
 
@@ -406,7 +406,7 @@ const Form: React.FC<ProsForm> = ({
               }
             >
               <label
-                htmlFor="thetamin"
+                htmlFor="thetamín"
                 className="block  text-sm font-medium text-gray-900 "
               >
                 Angulo min
@@ -416,17 +416,17 @@ const Form: React.FC<ProsForm> = ({
             <InputEditable changeEs={changeEs} value={"°"}>
               <input
                 type="number"
-                id="thetamin"
-                name="thetamin"
-                value={values["thetamin"] || ""}
+                id="thetamín"
+                name="thetamín"
+                value={values["thetamín"] || ""}
                 onChange={handlerChange}
                 className={`block w-full p-2 text-gray-900 border ${
-                  errors["thetamin"] ? "border-red-500" : "border-gray-300"
+                  errors["thetamín"] ? "border-red-500" : "border-gray-300"
                 } rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500`}
                 required
               />
-              {errors["thetamin"] && (
-                <p className="text-red-500 text-xs">{errors["thetamin"]}</p>
+              {errors["thetamín"] && (
+                <p className="text-red-500 text-xs">{errors["thetamín"]}</p>
               )}
             </InputEditable>
           </div>
@@ -437,7 +437,7 @@ const Form: React.FC<ProsForm> = ({
               }
             >
               <label
-                htmlFor="thetamax"
+                htmlFor="thetamáx"
                 className="block  text-sm font-medium text-gray-900 "
               >
                 Angulo maximo
@@ -446,17 +446,17 @@ const Form: React.FC<ProsForm> = ({
             <InputEditable changeEs={changeEs} value={"°"}>
               <input
                 type="number"
-                id="thetamax"
-                name="thetamax"
-                value={values["thetamax"] || ""}
+                id="thetamáx"
+                name="thetamáx"
+                value={values["thetamáx"] || ""}
                 onChange={handlerChange}
                 className={`block w-full p-2 text-gray-900 border ${
-                  errors["thetamax"] ? "border-red-500" : "border-gray-300"
+                  errors["thetamáx"] ? "border-red-500" : "border-gray-300"
                 } rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500`}
                 required
               />
-              {errors["thetamax"] && (
-                <p className="text-red-500 text-xs">{errors["thetamax"]}</p>
+              {errors["thetamáx"] && (
+                <p className="text-red-500 text-xs">{errors["thetamáx"]}</p>
               )}
             </InputEditable>
           </div>
@@ -535,7 +535,7 @@ const Form: React.FC<ProsForm> = ({
               }
             >
               <label
-                htmlFor="Fmin"
+                htmlFor="Fmín"
                 className="block text-sm font-medium text-gray-900 "
               >
                 Fmin
@@ -544,17 +544,17 @@ const Form: React.FC<ProsForm> = ({
             <InputEditable changeEs={changeEs} value={"lb"}>
               <input
                 type="number"
-                id="Fmin"
-                name="Fmin"
-                value={values["Fmin"] || ""}
+                id="Fmín"
+                name="Fmín"
+                value={values["Fmín"] || ""}
                 onChange={handlerChange}
                 className={`block w-full p-2 text-gray-900 border ${
-                  errors["Fmin"] ? "border-red-500" : "border-gray-300"
+                  errors["Fmín"] ? "border-red-500" : "border-gray-300"
                 } rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500`}
                 required
               />
-              {errors["Fmin"] && (
-                <p className="text-red-500 text-xs">{errors["Fmin"]}</p>
+              {errors["Fmín"] && (
+                <p className="text-red-500 text-xs">{errors["Fmín"]}</p>
               )}
             </InputEditable>
           </div>
@@ -565,7 +565,7 @@ const Form: React.FC<ProsForm> = ({
               }
             >
               <label
-                htmlFor="Fmax"
+                htmlFor="Fmáx"
                 className="block text-sm font-medium text-gray-900 "
               >
                 Fmax
@@ -574,17 +574,17 @@ const Form: React.FC<ProsForm> = ({
             <InputEditable changeEs={changeEs} value={"lb"}>
               <input
                 type="number"
-                id="Fmax"
-                name="Fmax"
-                value={values["Fmax"] || ""}
+                id="Fmáx"
+                name="Fmáx"
+                value={values["Fmáx"] || ""}
                 onChange={handlerChange}
                 className={`block w-full p-2 text-gray-900 border ${
-                  errors["Fmax"] ? "border-red-500" : "border-gray-300"
+                  errors["Fmáx"] ? "border-red-500" : "border-gray-300"
                 } rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500`}
                 required
               />
-              {errors["Fmax"] && (
-                <p className="text-red-500 text-xs">{errors["Fmax"]}</p>
+              {errors["Fmáx"] && (
+                <p className="text-red-500 text-xs">{errors["Fmáx"]}</p>
               )}
             </InputEditable>
           </div>
@@ -595,7 +595,7 @@ const Form: React.FC<ProsForm> = ({
           <div>
             <Tooltip text="Es el valor más alto de carga a la que se somete el resorte en su ciclo de trabajo.">
               <label
-                htmlFor="Mmin"
+                htmlFor="Mmín"
                 className="block text-sm font-medium text-gray-900 "
               >
                 Mmin
@@ -605,24 +605,24 @@ const Form: React.FC<ProsForm> = ({
             <InputEditable changeEs={changeEs} value={"lb*in"}>
               <input
                 type="number"
-                id="Mmin"
-                name="Mmin"
-                value={values["Mmin"] || ""}
+                id="Mmín"
+                name="Mmín"
+                value={values["Mmín"] || ""}
                 onChange={handlerChange}
                 className={`block w-full p-2 text-gray-900 border ${
-                  errors["Mmin"] ? "border-red-500" : "border-gray-300"
+                  errors["Mmín"] ? "border-red-500" : "border-gray-300"
                 } rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500`}
                 required
               />
-              {errors["Mmin"] && (
-                <p className="text-red-500 text-xs">{errors["Mmin"]}</p>
+              {errors["Mmín"] && (
+                <p className="text-red-500 text-xs">{errors["Mmín"]}</p>
               )}
             </InputEditable>
           </div>
           <div>
             <Tooltip text="Es el valor más bajo de carga a la que se somete el resorte en su ciclo de trabajo. ">
               <label
-                htmlFor="Mmax"
+                htmlFor="Mmáx"
                 className="block text-sm font-medium text-gray-900 "
               >
                 Mmax
@@ -631,17 +631,17 @@ const Form: React.FC<ProsForm> = ({
             <InputEditable changeEs={changeEs} value={"lb*in"}>
               <input
                 type="number"
-                id="Mmax"
-                name="Mmax"
-                value={values["Mmax"] || ""}
+                id="Mmáx"
+                name="Mmáx"
+                value={values["Mmáx"] || ""}
                 onChange={handlerChange}
                 className={`block w-full p-2 text-gray-900 border ${
-                  errors["Mmax"] ? "border-red-500" : "border-gray-300"
+                  errors["Mmáx"] ? "border-red-500" : "border-gray-300"
                 } rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500`}
                 required
               />
-              {errors["Mmax"] && (
-                <p className="text-red-500 text-xs">{errors["Mmax"]}</p>
+              {errors["Mmáx"] && (
+                <p className="text-red-500 text-xs">{errors["Mmáx"]}</p>
               )}
             </InputEditable>
           </div>
@@ -708,7 +708,7 @@ const Form: React.FC<ProsForm> = ({
       {cases("DFMINMAX", bodyChoose, casesChoose) ? (
         <>
           <div>
-            <Tooltip text="Es la deflexión que experimenta el resorte con Fmin">
+            <Tooltip text="Es la deflexión que experimenta el resorte con Fmín">
               <label
                 htmlFor="ymin"
                 className="block text-sm font-medium text-gray-900 "
