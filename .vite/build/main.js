@@ -15,7 +15,6 @@ const createWindow = () => {
   {
     mainWindow.loadURL("http://localhost:5173");
   }
-  mainWindow.webContents.openDevTools();
 };
 electron.app.on("ready", createWindow);
 electron.app.on("window-all-closed", () => {

@@ -409,7 +409,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="thetamin"
                 className="block  text-sm font-medium text-gray-900 "
               >
-                Angulo min
+                Angulo mín
               </label>
             </Tooltip>
 
@@ -440,7 +440,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="thetamax"
                 className="block  text-sm font-medium text-gray-900 "
               >
-                Angulo maximo
+                Angulo máx
               </label>
             </Tooltip>
             <InputEditable changeEs={changeEs} value={"°"}>
@@ -471,7 +471,7 @@ const Form: React.FC<ProsForm> = ({
               htmlFor="Do_def"
               className="block  text-sm font-medium text-gray-900 "
             >
-              Dexterno
+              Diámetro externo
             </label>
           </Tooltip>
 
@@ -538,7 +538,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="Fmin"
                 className="block text-sm font-medium text-gray-900 "
               >
-                Fmin
+                Fmín
               </label>
             </Tooltip>
             <InputEditable changeEs={changeEs} value={"lb"}>
@@ -568,7 +568,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="Fmax"
                 className="block text-sm font-medium text-gray-900 "
               >
-                Fmax
+                Fmáx
               </label>
             </Tooltip>
             <InputEditable changeEs={changeEs} value={"lb"}>
@@ -598,7 +598,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="Mmin"
                 className="block text-sm font-medium text-gray-900 "
               >
-                Mmin
+                Mmín
               </label>
             </Tooltip>
 
@@ -625,7 +625,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="Mmax"
                 className="block text-sm font-medium text-gray-900 "
               >
-                Mmax
+                Mmáx
               </label>
             </Tooltip>
             <InputEditable changeEs={changeEs} value={"lb*in"}>
@@ -683,7 +683,7 @@ const Form: React.FC<ProsForm> = ({
               htmlFor="k"
               className="block  text-sm font-medium text-gray-900 "
             >
-              Constante resorte (K)
+              Constante resorte (k)
             </label>
           </Tooltip>
           <InputEditable changeEs={changeEs} value={"lb/in"}>
@@ -713,7 +713,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="ymin"
                 className="block text-sm font-medium text-gray-900 "
               >
-                Deflexión Min
+                Deflexión Mín
               </label>
             </Tooltip>
             <InputEditable changeEs={changeEs} value={"in"}>
@@ -739,7 +739,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="ymax"
                 className="block text-sm font-medium text-gray-900 "
               >
-                Deflexión Max
+                Deflexión Máx
               </label>
             </Tooltip>
 
@@ -799,7 +799,7 @@ const Form: React.FC<ProsForm> = ({
             htmlFor="d"
             className="block  text-sm font-medium text-gray-900 "
           >
-            Diametro
+            Diámetro del alambre
           </label>
         </Tooltip>
 

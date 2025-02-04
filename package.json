@@ -5,7 +5,7 @@
   "description": "My Electron application description",
   "main": ".vite/build/main.js",
   "scripts": {
-    "start": "electron-forge start",
+    "start": "electron-forge start ",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
@@ -64,7 +64,6 @@
     "productName": "Helicoiedu",
     "win": {
       "target": "nsis",  
-      // "icon": "src/assets/icon.ico", 
       "requestedExecutionLevel": "asInvoker", 
       "asar": true 
     }
