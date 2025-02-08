@@ -17,4 +17,4 @@ export const geometricosExtension = [
   "ymax",
 ];
 export const geometricosTorsion = ["D",  "theta_min", "theta_max"];
-export const geometricosValueTorsion = ["in", "in", "in", "()", "()"];
+export const geometricosValueTorsion = ["in", "in", "in"];

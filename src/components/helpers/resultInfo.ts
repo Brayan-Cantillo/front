@@ -3,15 +3,15 @@ export const torsionBody = [
   { value: "Do", label: "Do" },
   { value: "Di", label: "Di" },
   { value: "k", label: "Constante del resorte" },
-  { value: "Ns", label: "F.D.S Estático" },
-  { value: "Nf", label: "F.D.S Fatiga" },
+  { value: "Nyb", label: "F.D.S Estático" },
+  { value: "Nfb", label: "F.D.S Fatiga" },
 ];
 export const torsion2Body = [
   { value: "D", label: "D" },
   { value: "Di", label: "Di" },
   { value: "theta", label: "theta" },
-  { value: "Ns", label: "F.D.S Estático" },
-  { value: "Nf", label: "F.D.S Fatiga" },
+  { value: "Nyb", label: "F.D.S Estático" },
+  { value: "Nfb", label: "F.D.S Fatiga" },
 ];
 export const torsion3Body = [
   { value: "D", label: "D" },
@@ -19,16 +19,16 @@ export const torsion3Body = [
   { value: "Di", label: "Di" },
   { value: "Mmin", label: "Mmín" },
   { value: "Mmax", label: "Mmáx" },
-  { value: "Ns", label: "F.D.S Estático" },
-  { value: "Nf", label: "F.D.S Fatiga" },
+  { value: "Nyb", label: "F.D.S Estático" },
+  { value: "Nfb", label: "F.D.S Fatiga" },
 ];
 export const torsion4Body = [
   { value: "D", label: "D" },
   { value: "Do", label: "Do" },
   { value: "Di", label: "Di" },
   { value: "theta", label: "theta" },
-  { value: "Ns", label: "F.D.S Estático" },
-  { value: "Nf", label: "F.D.S Fatiga" },
+  { value: "Nyb", label: "F.D.S Estático" },
+  { value: "Nfb", label: "F.D.S Fatiga" },
 ];
 export const torsion5Body = [
   { value: "D", label: "D" },
@@ -36,8 +36,8 @@ export const torsion5Body = [
   { value: "Di", label: "Di" },
   { value: "Mmin", label: "Mmín" },
   { value: "Mmax", label: "Mmáx" },
-  { value: "Ns", label: "F.D.S Estático" },
-  { value: "Nf", label: "F.D.S Fatiga" },
+  { value: "Nyb", label: "F.D.S Estático" },
+  { value: "Nfb", label: "F.D.S Fatiga" },
 ];
 
 export const compresionCase1Body = [
@@ -203,6 +203,7 @@ export const cases = (value: string,bodyChoose:string,casesChoose:string ): bool
       if (value === "DEX") return true;
       if (value === "LF") return true;
     }
+    if (value === "TOR") return true;
   }
 
   if (bodyChoose === "Extensión") {
@@ -230,14 +231,18 @@ export const cases = (value: string,bodyChoose:string,casesChoose:string ): bool
       if (value === "LF") return true;
       if (value === "DFMINMAX") return true;
     }
+    if (value === "TOR") return true;
   }
   if (bodyChoose === "Torsión") {
     if (casesChoose === "1") {
       if (value === "MMINMAX") return true;
+      if (value === "TOR") return true;
+      
     }
     if (casesChoose === "2") {
       if (value === "R") return true;
       if (value === "MMINMAX") return true;
+      if (value === "TOR") return true;
     }
     if (casesChoose === "3") {
       if (value === "R") return true;
@@ -247,6 +252,7 @@ export const cases = (value: string,bodyChoose:string,casesChoose:string ): bool
       if (value === "R") return true;
       if (value === "MMINMAX") return true;
       if (value === "DEX") return true;
+      if (value === "TOR") return true;
     }
     if (casesChoose === "5") {
       if (value === "R") return true;

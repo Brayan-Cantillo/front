@@ -324,16 +324,19 @@ const Form: React.FC<ProsForm> = ({
             html: `<ol style="text-align: justify;">${itemsHtml}</ol>`,
             icon: "error",
           });
+          setResult(undefined);
         } else {
           Swal.fire({
             title: "Error!",
             text: result.response.data.error,
             icon: "error",
           });
+          setResult(undefined);
         }
       }
     } catch (error) {
       console.log(error);
+      setResult(undefined);
     }
   };
 
@@ -1021,7 +1024,7 @@ const Form: React.FC<ProsForm> = ({
           )}
         </div>
       ) : null}
-      {bodyChoose === "Torsión" ? (
+      {cases("TOR", bodyChoose, casesChoose) ? (
         <>
           <div>
             <Tooltip text="Es la variación del ángulo de rotación del resorte medido desde su posición libre hasta una posición final.">
