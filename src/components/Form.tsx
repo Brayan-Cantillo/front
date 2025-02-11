@@ -507,7 +507,7 @@ const Form: React.FC<ProsForm> = ({
               htmlFor="Lf_def"
               className="block text-sm font-medium text-gray-900 "
             >
-              LF (longitud libre)
+              Lf (longitud libre)
             </label>
           </Tooltip>
 
@@ -737,7 +737,7 @@ const Form: React.FC<ProsForm> = ({
             </InputEditable>
           </div>
           <div>
-            <Tooltip text="Es la deflexión que experimenta el resorte con Fmax">
+            <Tooltip text="Es la deflexión que experimenta el resorte con Fmáx">
               <label
                 htmlFor="ymax"
                 className="block text-sm font-medium text-gray-900 "
@@ -802,7 +802,7 @@ const Form: React.FC<ProsForm> = ({
             htmlFor="d"
             className="block  text-sm font-medium text-gray-900 "
           >
-            Diámetro del alambre
+            Diámetro del alambre (d)
           </label>
         </Tooltip>
 
@@ -817,7 +817,7 @@ const Form: React.FC<ProsForm> = ({
               errors["d"] ? "border-red-500" : "border-gray-300"
             } rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500`}
           >
-            <option selected>Escoge Diametro</option>
+            <option selected>Escoge Diámetro</option>
             {diametros.map((e) => (
               <option key={e.id} value={e.id}>
                 {e.label}
@@ -866,7 +866,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="C"
                 className="block text-sm font-medium text-gray-900 "
               >
-                Indice C
+                Índice C
               </label>
             </Tooltip>
 
@@ -905,7 +905,7 @@ const Form: React.FC<ProsForm> = ({
             >
               <option selected>Escoge Tratamiento</option>
               <option value="1">Sin Granallar</option>
-              <option value="2">Granallados</option>
+              <option value="2">Granallado con partículas</option>
             </select>
             {errors["Tratamiento"] && (
               <p className="text-red-500 text-xs">{errors["Tratamiento"]}</p>
@@ -922,7 +922,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="C1"
                 className="block  text-sm font-medium text-gray-900 "
               >
-                Indice C1
+                Índice C1
               </label>
             </Tooltip>
 
@@ -947,7 +947,7 @@ const Form: React.FC<ProsForm> = ({
                 htmlFor="C2"
                 className="block  text-sm font-medium text-gray-900 "
               >
-                Indice C2
+                Índice C2
               </label>
             </Tooltip>
             <input

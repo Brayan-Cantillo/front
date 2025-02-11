@@ -106,7 +106,7 @@ const InfoModal: React.FC<{ bodyChoose: string; values: any; changeEs:boolean}> 
   return (
     <div className="grid gap-6 grid-cols-2">
       <div className="grid grid-cols-3 py-5 space-y-3 px-6 rounded-md shadow bg-slate-100">
-        <span className="col-span-3 text-center font-bold">F.GEOMETRICOS</span>
+        <span className="col-span-3 text-center font-bold">F.GEOMÉTRICOS</span>
         <div className="flex flex-col space-y-2">
           {switchGeometricos().map((e) => (
             <span key={e}>{e}</span>
