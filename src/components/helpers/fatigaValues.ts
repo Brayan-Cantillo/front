@@ -4,10 +4,10 @@ export const fatigaTorsion = ["Ma", "Mm", "sigma_max_ext", "sigma_max_int", "sig
 export const fatigaValueTorsion = [
   "lb.in",
   "lb.in",
-  "psi",
-  "psi",
-  "psi",
-  "psi",
-  "psi",
+  "Psi",
+  "Psi",
+  "Psi",
+  "Psi",
+  "Psi",
 ];
-export const fatigaValueExtAndCompr = ["lb", "lb", "psi", "psi", "psi", "psi"];
+export const fatigaValueExtAndCompr = ["lb", "lb", "Psi", "Psi", "Psi", "Psi"];

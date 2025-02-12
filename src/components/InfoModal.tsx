@@ -98,6 +98,7 @@ const InfoModal: React.FC<{ bodyChoose: string; values: any; changeEs:boolean}> 
       if (value === "lb") return "N";
       if (value === "lb/in") return "N/mm";
       if (value === "lb*in") return "N*mm";
+      if (value === "Psi") return "Mpa";
     }
     return value;
   };

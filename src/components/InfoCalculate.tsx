@@ -112,6 +112,7 @@ const InfoCalculate: React.FC<{
       if (value === "lb") return "N";
       if (value === "lb/in") return "N/mm";
       if (value === "lb*in") return "N*mm";
+      if (value === "Psi") return "Mpa";
     }
     return value;
   };

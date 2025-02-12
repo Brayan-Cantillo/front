@@ -224,24 +224,24 @@ const Form: React.FC<ProsForm> = ({
 
   const kRequired = (newErrors: any) => {
     if (!values["k"]) {
-      newErrors["k"] = "Es requerido ";
+      newErrors["k"] = "Es Requerido ";
     }
   };
 
   const DeflexionRequired = (newErrors: any) => {
     if (!values["Deflexión"]) {
-      newErrors["Deflexión"] = "Es requerido ";
+      newErrors["Deflexión"] = "Es Requerido ";
     }
   };
 
   const Do_defRequired = (newErrors: any) => {
     if (!values["Do_def"]) {
-      newErrors["Do_def"] = "Es requerido ";
+      newErrors["Do_def"] = "Es Requerido ";
     }
   };
   const Lf_defRequired = (newErrors: any) => {
     if (!values["Lf_def"]) {
-      newErrors["Lf_def"] = "Es requerido ";
+      newErrors["Lf_def"] = "Es Requerido ";
     }
   };
 
@@ -405,7 +405,7 @@ const Form: React.FC<ProsForm> = ({
           <div>
             <Tooltip
               text={
-                "Es la variación del ángulo de rotación del resorte medido desde su posición libre."
+                "Es la deflexión ángular que experimenta el resorte de torsión cuando se somete a Mmín."
               }
             >
               <label
@@ -436,7 +436,7 @@ const Form: React.FC<ProsForm> = ({
           <div>
             <Tooltip
               text={
-                "Es la variación del ángulo de rotación del resorte medido desde su posición final.  "
+                "Es la deflexión ángular que experimenta el resorte de torsión cuando se somete a Mmáx.  "
               }
             >
               <label
@@ -534,7 +534,7 @@ const Form: React.FC<ProsForm> = ({
           <div>
             <Tooltip
               text={
-                "Es el valor más alto de carga a la que se somete el resorte en su ciclo de trabajo."
+                "Es el valor más bajo de carga a la que se somete el resorte en su ciclo de trabajo."
               }
             >
               <label
@@ -564,7 +564,7 @@ const Form: React.FC<ProsForm> = ({
           <div>
             <Tooltip
               text={
-                "Es el valor más bajo de carga a la que se somete el resorte en su ciclo de trabajo."
+                "Es el valor más alto de carga a la que se somete el resorte en su ciclo de trabajo."
               }
             >
               <label
@@ -596,7 +596,7 @@ const Form: React.FC<ProsForm> = ({
       {cases("MMINMAX", bodyChoose, casesChoose) ? (
         <>
           <div>
-            <Tooltip text="Es el valor más alto de carga a la que se somete el resorte en su ciclo de trabajo.">
+            <Tooltip text="Es el valor más bajo de momento al que se somete el resorte helicoidal a torsión en su ciclo de trabajo.">
               <label
                 htmlFor="Mmin"
                 className="block text-sm font-medium text-gray-900 "
@@ -623,7 +623,7 @@ const Form: React.FC<ProsForm> = ({
             </InputEditable>
           </div>
           <div>
-            <Tooltip text="Es el valor más bajo de carga a la que se somete el resorte en su ciclo de trabajo. ">
+            <Tooltip text="Es el valor más alto de momento al que se somete el resorte helicoidal a torsión en su ciclo de trabajo. ">
               <label
                 htmlFor="Mmax"
                 className="block text-sm font-medium text-gray-900 "
@@ -830,7 +830,7 @@ const Form: React.FC<ProsForm> = ({
 
       {bodyChoose === "Compresión" ? (
         <div>
-          <Tooltip text="Contiene una lista de detalles de extremos disponibles para el diseño de resortes helicoidales.">
+          <Tooltip text="Contiene una lista de detalles de extremos disponibles para el diseño de resortes helicoidales a compresión.">
             <label
               htmlFor="Extremos"
               className="block text-sm font-medium text-gray-900 "
@@ -886,7 +886,7 @@ const Form: React.FC<ProsForm> = ({
             )}
           </div>
           <div>
-            <Tooltip text="Permite agregar esfuerzos resiudales benéficos en el resorte a partir de dos alternativas, Sin granallar y Granallado con Partículas.">
+            <Tooltip text="Permite agregar esfuerzos residuales beneficiosos en el resorte a partir de dos alternativas, Sin granallar y Granallado con Partículas.">
               <label
                 htmlFor="Tratamiento"
                 className="block text-sm font-medium text-gray-900 "
@@ -917,7 +917,7 @@ const Form: React.FC<ProsForm> = ({
         <>
           {" "}
           <div>
-            <Tooltip text="A partir de este factor se calcula el factor Kb. Depende del radio promedio del gancho y del diámetro del alambre.">
+            <Tooltip text="A partir de este índice se calcula el factor Kb. Depende del radio promedio del gancho y del diámetro del alambre. Para suposición de extremos estándar el índice C1 coincide con el índice C.">
               <label
                 htmlFor="C1"
                 className="block  text-sm font-medium text-gray-900 "
@@ -942,7 +942,7 @@ const Form: React.FC<ProsForm> = ({
             )}
           </div>
           <div>
-            <Tooltip text="A partir de este factor se calcula el factor Kw2. Depende del radio en el lado de doblez y del diámetro del alambre. Su valor debe ser mayor a 4. ">
+            <Tooltip text="A partir de este índice se calcula el factor Kw2. Depende del radio en el lado de doblez y del diámetro del alambre. Su valor debe ser mayor a 4. ">
               <label
                 htmlFor="C2"
                 className="block  text-sm font-medium text-gray-900 "
@@ -997,7 +997,7 @@ const Form: React.FC<ProsForm> = ({
       </div>
       {bodyChoose !== "Extensión" ? (
         <div>
-          <Tooltip text=" El asentamiento permite agregar esfuerzos residuales al resorte a partir de la cedencia del material con el que se fabrica. ">
+          <Tooltip text=" El asentamiento permite agregar esfuerzos residuales beneficiosos al resorte a partir de la cedencia del material con el que se fabrica. ">
           <label
             htmlFor="Asentamiento"
             className="block text-sm font-medium text-gray-900 "
@@ -1054,12 +1054,12 @@ const Form: React.FC<ProsForm> = ({
           </InputEditable>
           </div>
           <div>
-            <Tooltip text="Es la longitud de los extremos tangentes del resorte helicoidal de torsión. ">
+            <Tooltip text="Es la longitud del primer extremo tangente del resorte helicoidal de torsión. ">
               <label
                 htmlFor="L1"
                 className="block  text-sm font-medium text-gray-900 "
               >
-                Long. Extremos 1
+                Longitud de Extremo 1
               </label>
             </Tooltip>
 
@@ -1079,12 +1079,12 @@ const Form: React.FC<ProsForm> = ({
             )}
           </div>
           <div>
-            <Tooltip text="Es la longitud de los extremos tangentes del resorte helicoidal de torsión. ">
+            <Tooltip text="Es la longitud del segundo extremo tangente del resorte helicoidal de torsión. ">
               <label
                 htmlFor="L2"
                 className="block mb-2 text-sm font-medium text-gray-900 "
               >
-                Long. Extremos 2
+                Longitud de Extremo 2
               </label>
             </Tooltip>
             <input
