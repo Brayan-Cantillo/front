@@ -8,6 +8,7 @@ const createWindow = () => {
   const mainWindow = new electron.BrowserWindow({
     width: 800,
     height: 600,
+    icon: path.join(__dirname, "assets", "favicon.ico"),
     webPreferences: {
       preload: path.join(__dirname, "preload.js")
     }

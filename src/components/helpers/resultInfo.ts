@@ -203,7 +203,7 @@ export const cases = (value: string,bodyChoose:string,casesChoose:string ): bool
       if (value === "DEX") return true;
       if (value === "LF") return true;
     }
-    if (value === "TOR") return true;
+    if (value === "TOR") return false;
   }
 
   if (bodyChoose === "Extensión") {
@@ -231,7 +231,7 @@ export const cases = (value: string,bodyChoose:string,casesChoose:string ): bool
       if (value === "LF") return true;
       if (value === "DFMINMAX") return true;
     }
-    if (value === "TOR") return true;
+    if (value === "TOR") return false;
   }
   if (bodyChoose === "Torsión") {
     if (casesChoose === "1") {

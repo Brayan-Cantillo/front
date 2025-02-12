@@ -1035,6 +1035,7 @@ const Form: React.FC<ProsForm> = ({
                 Theta
               </label>
             </Tooltip>
+            <InputEditable changeEs={changeEs} value={"°"}>
 
             <input
               type="number"
@@ -1050,6 +1051,7 @@ const Form: React.FC<ProsForm> = ({
             {errors["theta"] && (
               <p className="text-red-500 text-xs">{errors["theta"]}</p>
             )}
+          </InputEditable>
           </div>
           <div>
             <Tooltip text="Es la longitud de los extremos tangentes del resorte helicoidal de torsión. ">

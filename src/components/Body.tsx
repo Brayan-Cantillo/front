@@ -1,10 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Form from "./Form";
 import InfoCalculate from "./InfoCalculate";
 const Body: React.FC<{ bodyChoose: string, changeEs: boolean }> = ({ bodyChoose, changeEs }) => {
   const [casesChoose, setCasesChoose] = useState<string>("1");
   const [resultValue, setResult] = useState<any>(undefined);
+  useEffect(()=>{
+    setResult(undefined)
+  },[changeEs])
   return (
     <div className="h-full  overflow-y-auto px-6 pt-4   ">
         <div className="grid gap-4 grid-cols-2">
