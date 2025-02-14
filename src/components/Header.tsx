@@ -1,5 +1,5 @@
 import React from "react";
-import mensajePDF from '../assets/mensajes.pdf';
+import GUIADEUSUARIOHELICOIEDUPDF from '../assets/GUIADEUSUARIOHELICOIEDU.pdf';
 
 const Header: React.FC<{
   bodyChoose: string;
@@ -26,7 +26,7 @@ const Header: React.FC<{
           </span>
         ))}
         <div className="flex items-center ">
-          <a className="cursor-pointer hover:underline" href={mensajePDF} download="mensajes.pdf">
+          <a className="cursor-pointer hover:underline" href={GUIADEUSUARIOHELICOIEDUPDF} download="GUIADEUSUARIOHELICOIEDU.pdf">
             Ayuda
           </a>
         </div>
