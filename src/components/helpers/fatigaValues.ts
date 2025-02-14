@@ -10,4 +10,4 @@ export const fatigaValueTorsion = [
   "psi",
   "psi",
 ];
-export const fatigaValueExtAndCompr = ["lb", "lb", "psi", "psi", "psi"];
+export const fatigaValueExtAndCompr = ["lb", "lb", "psi", "psi", "psi", "psi"];
