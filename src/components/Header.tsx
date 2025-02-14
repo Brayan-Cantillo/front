@@ -26,7 +26,7 @@ const Header: React.FC<{
           </span>
         ))}
         <div className="flex items-center ">
-          <a className="cursor-pointer hover:underline" href={GUIADEUSUARIOHELICOIEDUPDF} download="GUIADEUSUARIOHELICOIEDU.pdf">
+          <a className="cursor-pointer hover:underline" href={GUIADEUSUARIOHELICOIEDUPDF} download>
             Ayuda
           </a>
         </div>
