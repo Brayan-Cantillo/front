@@ -5,13 +5,15 @@ if (require("electron-squirrel-startup")) {
   electron.app.quit();
 }
 const createWindow = () => {
+  const { width, height } = electron.screen.getPrimaryDisplay().workAreaSize;
   const mainWindow = new electron.BrowserWindow({
-    width: 800,
-    height: 600,
-    icon: path.join(__dirname, "assets", "favicon.ico"),
+    width,
+    height,
+    icon: path.join(__dirname, "../assets/favicon.ico"),
     webPreferences: {
       preload: path.join(__dirname, "preload.js")
-    }
+    },
+    autoHideMenuBar: true
   });
   {
     mainWindow.loadURL("http://localhost:5173");

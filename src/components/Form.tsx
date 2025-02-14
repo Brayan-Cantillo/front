@@ -122,16 +122,16 @@ const Form: React.FC<ProsForm> = ({
         Lf_defRequired(newErrors);
       }
       if (!values["C"]) {
-        newErrors["C"] = "Es Requerido.";
+        newErrors["C"] = "Es requerido.";
       }
       if (!values["Tratamiento"]) {
-        newErrors["Tratamiento"] = "Es Requerido.";
+        newErrors["Tratamiento"] = "Es requerido.";
       }
       if (!values["Asentamiento"]) {
-        newErrors["Asentamiento"] = "Es Requerido.";
+        newErrors["Asentamiento"] = "Es requerido.";
       }
       if (!values["Extremos"]) {
-        newErrors["Extremos"] = "Es Requerido.";
+        newErrors["Extremos"] = "Es requerido.";
       }
     }
 
@@ -161,10 +161,10 @@ const Form: React.FC<ProsForm> = ({
         ymin_ymax(newErrors);
       }
       if (!values["C1"]) {
-        newErrors["C1"] = "Es Requerido.";
+        newErrors["C1"] = "Es requerido.";
       }
       if (!values["C2"]) {
-        newErrors["C2"] = "Es Requerido.";
+        newErrors["C2"] = "Es requerido.";
       }
     }
     if (bodyChoose === "Torsión") {
@@ -176,13 +176,17 @@ const Form: React.FC<ProsForm> = ({
       }
       if (casesChoose === "2") {
         kRequired(newErrors);
+        mmin_mmax(newErrors);
       }
       if (casesChoose === "3") {
         kRequired(newErrors);
+        amin_amax(newErrors);
       }
       if (casesChoose === "4") {
         kRequired(newErrors);
         Do_defRequired(newErrors);
+        mmin_mmax(newErrors);
+        Lf_defRequired(newErrors);
       }
       if (casesChoose === "5") {
         kRequired(newErrors);
@@ -191,32 +195,32 @@ const Form: React.FC<ProsForm> = ({
         amin_amax(newErrors);
       }
       if (!values["L1"]) {
-        newErrors["L1"] = "Es Requerido.";
+        newErrors["L1"] = "Es requerido.";
       }
       if (!values["theta"]) {
-        newErrors["theta"] = "Es Requerido.";
+        newErrors["theta"] = "Es requerido.";
       }
       if (!values["L2"]) {
-        newErrors["L2"] = "Es Requerido.";
+        newErrors["L2"] = "Es requerido.";
       }
       if (!values["C"]) {
-        newErrors["C"] = "Es Requerido.";
+        newErrors["C"] = "Es requerido.";
       }
       if (!values["Tratamiento"]) {
-        newErrors["Tratamiento"] = "Es Requerido.";
+        newErrors["Tratamiento"] = "Es requerido.";
       }
       if (!values["Asentamiento"]) {
-        newErrors["Asentamiento"] = "Es Requerido.";
+        newErrors["Asentamiento"] = "Es requerido.";
       }
     }
     if (!values["Fatiga"]) {
-      newErrors["Fatiga"] = "Es Requerido.";
+      newErrors["Fatiga"] = "Es requerido.";
     }
     if (!values["material"]) {
-      newErrors["material"] = "Es Requerido.";
+      newErrors["material"] = "Es requerido.";
     }
     if (!values["d"]) {
-      newErrors["d"] = "Es Requerido.";
+      newErrors["d"] = "Es requerido.";
     }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -224,24 +228,24 @@ const Form: React.FC<ProsForm> = ({
 
   const kRequired = (newErrors: any) => {
     if (!values["k"]) {
-      newErrors["k"] = "Es Requerido ";
+      newErrors["k"] = "Es requerido ";
     }
   };
 
   const DeflexionRequired = (newErrors: any) => {
     if (!values["Deflexión"]) {
-      newErrors["Deflexión"] = "Es Requerido ";
+      newErrors["Deflexión"] = "Es requerido ";
     }
   };
 
   const Do_defRequired = (newErrors: any) => {
     if (!values["Do_def"]) {
-      newErrors["Do_def"] = "Es Requerido ";
+      newErrors["Do_def"] = "Es requerido ";
     }
   };
   const Lf_defRequired = (newErrors: any) => {
     if (!values["Lf_def"]) {
-      newErrors["Lf_def"] = "Es Requerido ";
+      newErrors["Lf_def"] = "Es requerido ";
     }
   };
 
@@ -1062,6 +1066,7 @@ const Form: React.FC<ProsForm> = ({
                 Longitud de Extremo 1
               </label>
             </Tooltip>
+            <InputEditable changeEs={changeEs} value={"in"}>
 
             <input
               type="number"
@@ -1077,6 +1082,7 @@ const Form: React.FC<ProsForm> = ({
             {errors["L1"] && (
               <p className="text-red-500 text-xs">{errors["L1"]}</p>
             )}
+            </InputEditable>
           </div>
           <div>
             <Tooltip text="Es la longitud del segundo extremo tangente del resorte helicoidal de torsión. ">
@@ -1087,6 +1093,7 @@ const Form: React.FC<ProsForm> = ({
                 Longitud de Extremo 2
               </label>
             </Tooltip>
+            <InputEditable changeEs={changeEs} value={"in"}>
             <input
               type="number"
               id="L2"
@@ -1101,6 +1108,7 @@ const Form: React.FC<ProsForm> = ({
             {errors["L2"] && (
               <p className="text-red-500 text-xs">{errors["L2"]}</p>
             )}
+            </InputEditable>
           </div>
         </>
       ) : null}
