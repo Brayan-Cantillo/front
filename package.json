@@ -57,41 +57,16 @@
     "rollup-plugin-postcss": "^4.0.2",
     "sweetalert2": "^11.14.2"
   },
-  "build": {
+
+  "build": 
+  {
     "appId": "com.Helicoiedu.app",
     "productName": "HelicoiEdu",
     "win": {
-      "target": "nsis",
-      "icon": "assets/favicon.ico",
-      "requestedExecutionLevel": "asInvoker",
-      "asar": true
-    }
-  },
-  "config": {
-    "forge": {
-      "makers": [
-        {
-          "name": "@electron-forge/maker-zip",
-          "config": {
-            "platforms": [
-              "win32",
-              "darwin"
-            ]
-          }
-        },
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "HelicoiEdu"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {
-            "icon": "assets/favicon.ico"
-          }
-        }
-      ]
+      "target": "nsis",  
+      "icon":"assets/favicon.ico",
+      "requestedExecutionLevel": "asInvoker", 
+      "asar": true 
     }
   }
 }
