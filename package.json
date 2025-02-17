@@ -62,9 +62,12 @@
   {
     "appId": "com.Helicoiedu.app",
     "productName": "HelicoiEdu",
+    "directories": {
+    "buildResources": "assets"
+    },
     "win": {
       "target": "nsis",  
-      "icon":"assets/favicon.ico",
+      "icon":"assets/Logo.ico",
       "requestedExecutionLevel": "asInvoker", 
       "asar": true 
     }
